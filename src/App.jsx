@@ -2,6 +2,7 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Works from "./components/Works";
+import NavBar from "./common/NavBar";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         {/* <Route path="/about" element={<About />} /> */}
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
+      <NavBar />
     </>
   );
 }
