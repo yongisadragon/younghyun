@@ -1,4 +1,4 @@
-.layout {
+.container {
   /* width: 100%;
   gap: 1.5rem;
   display: flex;
@@ -6,4 +6,12 @@
   left: 0; */
   position: absolute;
   z-index: 10; /* 적절한 z-index 값을 설정합니다. */
+}
+
+.links {
+  cursor: pointer;
+  & > *:hover {
+    /* transition: 0.3s; */
+    opacity: 0.5;
+  }
 }
