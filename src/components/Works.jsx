@@ -5,7 +5,7 @@ import worksData from "../data/worksData";
 export default function Works() {
   const { title } = useParams();
   const work = worksData.find((work) => work.title === title);
-  console.log(title);
+  // console.log(title);
   return (
     <>
       <div>{work.title}</div>

@@ -6,6 +6,7 @@ export default function NavBar() {
   const handleAboutClick = () => {
     setSearchAbout({ about: "leeyounghyun" });
   };
+
   return (
     <div className={styles.layout}>
       <NavLink to={"/"}>Works</NavLink>
