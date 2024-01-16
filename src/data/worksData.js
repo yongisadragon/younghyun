@@ -4,7 +4,7 @@ const worksData = [
     title: "work1",
     year: 2022,
     desc: "Description for Work 1",
-    image: "images/work1.jpg", // 이미지 경로 수정
+    image: "test.png", // 이미지 경로 수정
     collaborators: ["Artist A", "Artist B"],
   },
   {
@@ -12,7 +12,7 @@ const worksData = [
     title: "work2",
     year: 2023,
     desc: "Description for Work 2",
-    image: "images/work2.jpg", // 이미지 경로 수정
+    image: "test.png", // 이미지 경로 수정
     collaborators: ["Artist C", "Artist D"],
   },
   {
@@ -20,7 +20,7 @@ const worksData = [
     title: "work3",
     year: 2021,
     desc: "Description for Work 3",
-    image: "images/work3.jpg", // 이미지 경로 수정
+    image: "test.png", // 이미지 경로 수정
     collaborators: ["Artist E", "Artist F"],
   },
   // 추가적인 작품 데이터를 필요한 만큼 추가.
