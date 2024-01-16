@@ -3,8 +3,7 @@ import Home from "./pages/Home";
 import Works from "./components/Works";
 import NavBar from "./common/NavBar";
 import About from "./pages/About";
-import styles from "./App.module.css";
-function App() {
+export default function App() {
   const [about] = useSearchParams();
   const isAbout = about.get("about") === "leeyounghyun";
 
@@ -13,14 +12,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/works/*" element={<Home />} />
-        <Route path="/works/:title" element={<Works />} />
-        {/* <Route path="/about" element={<About />} /> */}
+        <Route path="/works/:workTitle" element={<Works />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
+      <br />
       <NavBar />
       {isAbout && <About />}
     </>
   );
 }
-
-export default App;
