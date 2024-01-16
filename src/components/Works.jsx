@@ -3,9 +3,9 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import worksData from "../data/worksData";
 export default function Works() {
-  const { title } = useParams();
-  const work = worksData.find((work) => work.title === title);
-  // console.log(title);
+  const { workTitle } = useParams();
+  const work = worksData.find((work) => work.title === workTitle);
+
   return (
     <>
       <div>{work.title}</div>
