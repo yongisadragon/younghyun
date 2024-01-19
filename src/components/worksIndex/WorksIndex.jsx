@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import worksData from "../data/worksData";
+import worksData from "../../data/worksData";
 import styles from "./WorksIndex.module.css";
 export default function WorksIndex() {
   return (

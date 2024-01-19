@@ -1,6 +1,6 @@
 import React from "react";
-import worksData from "../data/worksData";
-import styles from "./WorkThumbnail.module.css";
+import worksData from "../../data/worksData";
+import styles from "./WorksThumbnail.module.css";
 export default function WorksThumbnail() {
   //map돌리기
   return (

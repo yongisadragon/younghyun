@@ -1,8 +1,8 @@
 import { Navigate, Route, Routes, useSearchParams } from "react-router-dom";
-import Home from "./pages/Home";
-import Works from "./components/Works";
-import NavBar from "./common/NavBar";
-import About from "./pages/About";
+import Home from "./pages/home/Home";
+import NavBar from "./common/navBar/NavBar";
+import Works from "./components/works/Works";
+import About from "./pages/about/About";
 export default function App() {
   const [about] = useSearchParams();
   const isAbout = about.get("about") === "leeyounghyun";
