@@ -1,15 +1,13 @@
 .container {
-  /* width: 100%;
-  gap: 1.5rem;
-  display: flex;
-  bottom: 0;
-  left: 0; */
   position: absolute;
+  bottom: 0;
   z-index: 10; /* 적절한 z-index 값을 설정합니다. */
 }
 
 .links {
   cursor: pointer;
+  display: flex;
+  gap: 0.75rem;
   & > *:hover {
     /* transition: 0.3s; */
     opacity: 0.5;
