@@ -1,7 +1,7 @@
 const worksData = [
   {
     id: 1,
-    title: "work1",
+    title: "Wood-Slab",
     year: 2022,
     desc: "Description for Work 1",
     image: "test.png", // 이미지 경로 수정
@@ -10,7 +10,7 @@ const worksData = [
   },
   {
     id: 2,
-    title: "work2",
+    title: "Mass",
     year: 2023,
     desc: "Description for Work 2",
     image: "test.png", // 이미지 경로 수정
@@ -19,7 +19,7 @@ const worksData = [
   },
   {
     id: 3,
-    title: "work3",
+    title: "The-Youth",
     year: 2021,
     desc: "Description for Work 3",
     image: "test.png", // 이미지 경로 수정

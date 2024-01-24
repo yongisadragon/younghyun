@@ -1,12 +1,13 @@
 import React from "react";
 import worksData from "../../data/worksData";
 import styles from "./WorksThumbnail.module.css";
+
 export default function WorksThumbnail() {
   //map돌리기
   return (
     <div className={styles.container}>
       {worksData.map((work) => (
-        <div>
+        <div key={work.id}>
           {/* 작품 이미지 */}
           <img src={`/images/${work.image}`} alt="test" />
           <div>
