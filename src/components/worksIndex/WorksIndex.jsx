@@ -6,7 +6,10 @@ export default function WorksIndex() {
   return (
     <div className={styles.container}>
       {worksData?.map((work) => (
-        <NavLink key={work.id} to={`/works/${work.title}`}>
+        <NavLink
+          className={styles.links}
+          key={work.id}
+          to={`/works/${work.title}`}>
           {`${work.id}. ${work.title}`}
         </NavLink>
       ))}

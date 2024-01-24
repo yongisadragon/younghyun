@@ -3,15 +3,14 @@ import styles from "./About.module.css";
 import { useSearchParams } from "react-router-dom";
 import { motion } from "framer-motion";
 
-export default function About() {
-  const [searchParams, setSearchParams] = useSearchParams();
-
+export default function About({ setIsAbout }) {
   const handleClose = () => {
-    const aboutParam = searchParams.get("about");
-    if (aboutParam) {
-      searchParams.delete("about");
-      setSearchParams(searchParams);
-    }
+    // const aboutParam = searchParams.get("about");
+    // if (aboutParam) {
+    //   searchParams.delete("about");
+    //   setSearchParams(searchParams);
+    // }
+    setIsAbout(false);
   };
 
   return (

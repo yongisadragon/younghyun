@@ -1,4 +1,14 @@
 .container {
   display: flex;
+  position: fixed;
   flex-direction: column;
+  top: 0;
+  left: 0;
+  /* mix-blend-mode: overlay; */
+  /* color: white; */
+  z-index: 5;
+}
+.links {
+  all: unset;
+  cursor: pointer;
 }
