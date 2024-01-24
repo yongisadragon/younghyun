@@ -4,8 +4,15 @@ import Home from "./pages/home/Home";
 import NavBar from "./common/navBar/NavBar";
 import Works from "./components/works/Works";
 import About from "./pages/about/About";
+
 export default function App() {
   const [isAbout, setIsAbout] = useState(false);
+
+  if (isAbout) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
 
   return (
     <>

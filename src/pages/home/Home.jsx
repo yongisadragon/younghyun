@@ -6,7 +6,13 @@ export default function Home() {
     <div>
       <WorksIndex />
       <WorksThumbnail />
-      <div style={{ height: "100vh" }}></div>
+      <div
+        style={{
+          height: "100vh",
+          width: "100%",
+          overflowWrap: "break-word",
+          fontSize: "30px",
+        }}></div>
     </div>
   );
 }
