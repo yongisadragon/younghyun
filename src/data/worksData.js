@@ -7,6 +7,7 @@ const worksData = [
     image: "test.png", // 이미지 경로 수정
     materials: "EPS, Glass fiber, Epoxy",
     collaborators: "Artist A, Artist B",
+    layout: "left",
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ const worksData = [
     image: "test.png", // 이미지 경로 수정
     materials: "EPS, Glass fiber, Epoxy",
     collaborators: "Artist A, Artist B",
+    layout: "styles.left",
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ const worksData = [
     image: "test.png", // 이미지 경로 수정
     materials: "EPS, Glass fiber, Epoxy",
     collaborators: "Artist A, Artist B",
+    layout: "styles.right",
   },
   // 추가적인 작품 데이터를 필요한 만큼 추가.
 ];
