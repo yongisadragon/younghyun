@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { NavLink, useNavigate, useSearchParams } from "react-router-dom";
+import React from "react";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import styles from "./NavBar.module.css";
 export default function NavBar({ setIsAbout }) {
   const [searchAbout, setSearchAbout] = useSearchParams();
@@ -8,7 +8,12 @@ export default function NavBar({ setIsAbout }) {
   return (
     <div className={styles.container}>
       <div className={styles.links}>
-        <div onClick={() => navigate("/")}>Works</div>
+        <div
+          onClick={() => {
+            navigate("/");
+          }}>
+          Works
+        </div>
         <div
           onClick={() => {
             // setSearchAbout({ about: "leeyounghyun" });
