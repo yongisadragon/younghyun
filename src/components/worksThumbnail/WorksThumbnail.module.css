@@ -1,17 +1,16 @@
 .container {
   display: flex;
-  margin-top: 100px;
+  /* margin-top: 100px; */
   cursor: pointer;
   flex-direction: column;
   gap: 1rem;
+  /* background-color: white; */
 }
 
 .left {
   color: red;
-  background-color: antiquewhite;
 }
 
 .right {
   color: blue;
-  background-color: darkgrey;
 }
