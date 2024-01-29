@@ -16,4 +16,6 @@ export default function lenis() {
   // lenis.on("scroll", (e) => {
   //   console.log(e);
   // });
+
+  return null;
 }

@@ -29,6 +29,26 @@ const worksData = [
     collaborators: "Artist A, Artist B",
     layout: "right",
   },
+  {
+    id: 4,
+    name: "The-Youth",
+    year: 2021,
+    desc: "Description for Work 3",
+    image: "test.png", // 이미지 경로 수정
+    materials: "EPS, Glass fiber, Epoxy",
+    collaborators: "Artist A, Artist B",
+    layout: "right",
+  },
+  {
+    id: 5,
+    name: "The-Youth",
+    year: 2021,
+    desc: "Description for Work 3",
+    image: "test.png", // 이미지 경로 수정
+    materials: "EPS, Glass fiber, Epoxy",
+    collaborators: "Artist A, Artist B",
+    layout: "right",
+  },
   // 추가적인 작품 데이터를 필요한 만큼 추가.
 ];
 
