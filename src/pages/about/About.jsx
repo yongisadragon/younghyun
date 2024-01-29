@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./About.module.css";
-import { useSearchParams } from "react-router-dom";
 import { motion } from "framer-motion";
 
 export default function About({ setIsAbout }) {
@@ -19,8 +18,8 @@ export default function About({ setIsAbout }) {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.8 }}
-      onClick={handleClose}
-      className={styles.background}>
+      className={styles.background}
+      onClick={handleClose}>
       <motion.div
         initial={{ y: 5 }}
         animate={{ y: 0 }}
@@ -33,7 +32,6 @@ export default function About({ setIsAbout }) {
         inspired by the surrounding objects and materials and explore unique
         stories through the characteristics of materials, textures, and
         formative ideas.
-        <p>BACK</p>
       </motion.div>
     </motion.div>
   );

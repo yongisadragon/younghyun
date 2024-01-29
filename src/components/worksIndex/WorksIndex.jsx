@@ -9,8 +9,8 @@ export default function WorksIndex() {
         <NavLink
           className={styles.links}
           key={work.id}
-          to={`/works/${work.title}`}>
-          {`${work.id}. ${work.title.replace("-", " ")}`}
+          to={`/works/${work.name}`}>
+          {`${work.id}. ${work.name.replace("-", " ")}`}
         </NavLink>
       ))}
     </div>

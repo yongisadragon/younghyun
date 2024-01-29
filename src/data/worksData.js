@@ -1,30 +1,30 @@
 const worksData = [
   {
     id: 1,
-    title: "Wood-Slab",
+    name: "Wood-Slab",
     year: 2022,
     desc: "Description for Work 1",
-    image: "test.png",
+    image: "test.png", // 이미지 경로 수정
     materials: "EPS, Glass fiber, Epoxy",
     collaborators: "Artist A, Artist B",
     layout: "left",
   },
   {
     id: 2,
-    title: "Mass",
+    name: "Mass",
     year: 2023,
     desc: "Description for Work 2",
-    image: "test.png",
+    image: "test.png", // 이미지 경로 수정
     materials: "EPS, Glass fiber, Epoxy",
     collaborators: "Artist A, Artist B",
     layout: "left",
   },
   {
     id: 3,
-    title: "The-Youth",
+    name: "The-Youth",
     year: 2021,
     desc: "Description for Work 3",
-    image: "test.png",
+    image: "test.png", // 이미지 경로 수정
     materials: "EPS, Glass fiber, Epoxy",
     collaborators: "Artist A, Artist B",
     layout: "right",

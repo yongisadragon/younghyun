@@ -5,10 +5,10 @@ import worksData from "../../data/worksData";
 
 export default function Works() {
   const { workTitle } = useParams();
-  const work = worksData.find((work) => work.title === workTitle);
+  const work = worksData.find((work) => work.name === workTitle);
   return (
     <div>
-      <div>{work.title.replace("-", " ")}</div>
+      <div>{work.name.replace("-", " ")}</div>
       <p>{work.year}</p>
       <p>{work.materials}</p>
       <p>
@@ -28,6 +28,7 @@ export default function Works() {
         meanings. Also, I aspire to open a window connecting the past, present,
         and future.
       </p>
+      <p>BACK</p>
     </div>
   );
 }
