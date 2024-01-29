@@ -15,21 +15,26 @@ export default function About({ setIsAbout }) {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 5 }}
-      animate={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.8 }}
       onClick={handleClose}
       className={styles.background}>
-      <div className={styles.contents} onClick={(e) => e.stopPropagation()}>
+      <motion.div
+        initial={{ y: 5 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.6 }}
+        className={styles.contents}
+        onClick={(e) => e.stopPropagation()}>
         Chogokri is a creative design studio based in Seoul. That name comes
         from a rural village where I first started designing. We work in a
         variety of areas, including furniture, object, and graphic. Chogokri is
         inspired by the surrounding objects and materials and explore unique
         stories through the characteristics of materials, textures, and
         formative ideas.
-      </div>
-      <p>BACK</p>
+        <p>BACK</p>
+      </motion.div>
     </motion.div>
   );
 }

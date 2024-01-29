@@ -5,7 +5,8 @@
   position: fixed;
   top: 0;
   right: 0;
+  cursor: pointer;
   /* 블레드모드 svg색상 변경 필요. */
   /* mix-blend-mode: difference; */
-  z-index: 30;
+  z-index: 20;
 }
