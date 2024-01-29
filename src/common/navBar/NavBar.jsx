@@ -8,7 +8,7 @@ export default function NavBar({ setIsAbout }) {
   return (
     <div className={styles.container}>
       <div className={styles.links}>
-        <div
+        <p
           onClick={() => {
             navigate("/");
             window.scrollTo({
@@ -17,20 +17,21 @@ export default function NavBar({ setIsAbout }) {
             });
           }}>
           Works
-        </div>
-        <div
+        </p>
+        <p
           onClick={() => {
             // setSearchAbout({ about: "leeyounghyun" });
             setIsAbout(true);
           }}>
           About
-        </div>
-        <div
+        </p>
+        <p
           onClick={() => {
             window.open("https://www.instagram.com/leeygnhn/", "_blank");
           }}>
           Instagram
-        </div>
+        </p>
+        <p>younghyun.com</p>
       </div>
     </div>
   );

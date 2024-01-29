@@ -1,7 +1,6 @@
 .container {
   position: fixed;
   bottom: 0;
-  padding: 10px 0;
   z-index: 20; /* 적절한 z-index 값을 설정합니다. */
   background-color: white;
   width: 100%;
@@ -9,11 +8,20 @@
 }
 
 .links {
-  cursor: pointer;
   display: flex;
-  gap: 1rem;
+  padding: 10px 10px;
+  gap: 3rem;
   & > *:hover {
     /* transition: 0.3s; */
     opacity: 0.5;
+    scale: 0.95;
+  }
+
+  & > p {
+    cursor: pointer;
+  }
+  & > p:last-child {
+    color: red;
+    margin-left: auto;
   }
 }
