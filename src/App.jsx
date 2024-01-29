@@ -4,16 +4,22 @@ import Home from "./pages/home/Home";
 import NavBar from "./common/navBar/NavBar";
 import Works from "./components/works/Works";
 import About from "./pages/about/About";
+import lenis from "./utils/lenis";
 
 export default function App() {
   const [isAbout, setIsAbout] = useState(false);
   // const Works = lazy(() => import("./components/works/Works"));
 
-  if (isAbout) {
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflow = "auto";
-  }
+  // TBD
+  // if (isAbout) {
+  //   document.body.style.overflow = "hidden";
+  // } else {
+  //   document.body.style.overflow = "auto";
+  // }
+
+  useEffect(() => {
+    lenis();
+  }, []);
 
   return (
     <>
