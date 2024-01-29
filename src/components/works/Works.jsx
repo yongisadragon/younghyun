@@ -9,6 +9,72 @@ export default function Works() {
     <>
       <div>{work.title.replace("-", " ")}</div>
       <p>{work.year}</p>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet facere
+        distinctio, blanditiis possimus tempora illum explicabo excepturi error
+        reiciendis a vero voluptas adipisci impedit! Labore alias accusantium
+        sequi ratione iste!
+      </div>{" "}
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet facere
+        distinctio, blanditiis possimus tempora illum explicabo excepturi error
+        reiciendis a vero voluptas adipisci impedit! Labore alias accusantium
+        sequi ratione iste!
+      </div>{" "}
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet facere
+        distinctio, blanditiis possimus tempora illum explicabo excepturi error
+        reiciendis a vero voluptas adipisci impedit! Labore alias accusantium
+        sequi ratione iste!
+      </div>{" "}
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet facere
+        distinctio, blanditiis possimus tempora illum explicabo excepturi error
+        reiciendis a vero voluptas adipisci impedit! Labore alias accusantium
+        sequi ratione iste!
+      </div>{" "}
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet facere
+        distinctio, blanditiis possimus tempora illum explicabo excepturi error
+        reiciendis a vero voluptas adipisci impedit! Labore alias accusantium
+        sequi ratione iste!
+      </div>{" "}
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet facere
+        distinctio, blanditiis possimus tempora illum explicabo excepturi error
+        reiciendis a vero voluptas adipisci impedit! Labore alias accusantium
+        sequi ratione iste!
+      </div>{" "}
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet facere
+        distinctio, blanditiis possimus tempora illum explicabo excepturi error
+        reiciendis a vero voluptas adipisci impedit! Labore alias accusantium
+        sequi ratione iste!
+      </div>{" "}
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet facere
+        distinctio, blanditiis possimus tempora illum explicabo excepturi error
+        reiciendis a vero voluptas adipisci impedit! Labore alias accusantium
+        sequi ratione iste!
+      </div>{" "}
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet facere
+        distinctio, blanditiis possimus tempora illum explicabo excepturi error
+        reiciendis a vero voluptas adipisci impedit! Labore alias accusantium
+        sequi ratione iste!
+      </div>{" "}
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet facere
+        distinctio, blanditiis possimus tempora illum explicabo excepturi error
+        reiciendis a vero voluptas adipisci impedit! Labore alias accusantium
+        sequi ratione iste!
+      </div>{" "}
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet facere
+        distinctio, blanditiis possimus tempora illum explicabo excepturi error
+        reiciendis a vero voluptas adipisci impedit! Labore alias accusantium
+        sequi ratione iste!
+      </div>
     </>
   );
 }

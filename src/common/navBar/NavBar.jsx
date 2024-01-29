@@ -11,6 +11,10 @@ export default function NavBar({ setIsAbout }) {
         <div
           onClick={() => {
             navigate("/");
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth",
+            });
           }}>
           Works
         </div>
