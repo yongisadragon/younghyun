@@ -26,7 +26,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/works" element={<Home />} />
-        <Route path="/works/:workTitle" element={<Works />} />
+        <Route path="/works/:workName" element={<Works />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <br />

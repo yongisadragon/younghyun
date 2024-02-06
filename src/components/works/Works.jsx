@@ -4,8 +4,8 @@ import { useParams } from "react-router-dom";
 import worksData from "../../data/worksData";
 
 export default function Works() {
-  const { workTitle } = useParams();
-  const work = worksData.find((work) => work.name === workTitle);
+  const { workName } = useParams();
+  const work = worksData.find((work) => work.name === workName);
   return (
     <div>
       <div>{work.name.replace("-", " ")}</div>

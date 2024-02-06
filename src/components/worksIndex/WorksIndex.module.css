@@ -9,7 +9,12 @@
   z-index: 10;
   font-size: 1.4375rem;
 }
+
 .links {
   all: unset;
   cursor: pointer;
+}
+
+.selected {
+  color: red;
 }
