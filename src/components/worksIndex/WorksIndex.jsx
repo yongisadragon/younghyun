@@ -8,32 +8,27 @@ const WorksIndex = (props, ref) => {
 
   useEffect(() => {
     const handlePosition = () => {
-      const scrollPosition = window.scrollY;
+      const scrollPosition = window.scrollY + window.innerHeight / 2;
       // 썸네일들의 Y포지션값 계산해서 배열
       const thumbnailsY = ref.current.map((thumb) => thumb.offsetTop);
       //현재 스크롤위치의 idx계산
-      const currentIndex = thumbnailsY.findIndex((el) => el > scrollPosition);
-
-      setCurrentPosition(currentIndex === -1 ? null : currentIndex);
+      const currentIndex = thumbnailsY.findIndex((el) => el >= scrollPosition);
+      console.log(thumbnailsY, scrollPosition, currentIndex);
+      // setCurrentPosition(currentIndex === -1 ? null : currentIndex);
     };
 
     window.addEventListener("scroll", handlePosition);
     return () => window.removeEventListener("scroll", handlePosition);
   }, [ref]);
 
-  const handleScroll = (i) => {
-    ref.current[i].scrollIntoView({ behavior: "smooth" });
-  };
-
-  const handleLinkTo = (workName, idx) => {
-    if (currentPosition === ref.current[idx]) {
+  const handleScroll = (workName, idx) => {
+    if (currentPosition === idx) {
       navigate(`/works/${workName}`);
     } else {
-      handleScroll(idx);
+      ref.current[idx].scrollIntoView({ block: "center", behavior: "smooth" });
+      setCurrentPosition(idx);
     }
   };
-
-  console.log(currentPosition);
 
   return (
     <div className={styles.container}>
@@ -42,7 +37,7 @@ const WorksIndex = (props, ref) => {
           key={work.id}
           className={currentPosition === idx ? styles.selected : styles.links}
           onClick={() => {
-            handleLinkTo(work.name, idx);
+            handleScroll(work.name, idx);
           }}>
           {`${work.id}. ${work.name.replace("-", " ")}`}
         </div>

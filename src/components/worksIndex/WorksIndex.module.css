@@ -11,10 +11,11 @@
 }
 
 .links {
-  all: unset;
+  /* all: unset; */
   cursor: pointer;
 }
 
 .selected {
   color: red;
+  cursor: pointer;
 }
