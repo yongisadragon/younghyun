@@ -6,20 +6,20 @@ const WorksIndex = (props, ref) => {
   const [currentPosition, setCurrentPosition] = useState(null);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    const handlePosition = () => {
-      const scrollPosition = window.scrollY + window.innerHeight / 2;
-      // 썸네일들의 Y포지션값 계산해서 배열
-      const thumbnailsY = ref.current.map((thumb) => thumb.offsetTop);
-      //현재 스크롤위치의 idx계산
-      const currentIndex = thumbnailsY.findIndex((el) => el >= scrollPosition);
-      console.log(thumbnailsY, scrollPosition, currentIndex);
-      // setCurrentPosition(currentIndex === -1 ? null : currentIndex);
-    };
+  // useEffect(() => {
+  //   const handlePosition = () => {
+  //     const scrollPosition = window.scrollY + window.innerHeight / 2;
+  //     // 썸네일들의 Y포지션값 계산해서 배열
+  //     const thumbnailsY = ref.current.map((thumb) => thumb.offsetTop);
+  //     //현재 스크롤위치의 idx계산
+  //     const currentIndex = thumbnailsY.findIndex((el) => el >= scrollPosition);
+  //     console.log(thumbnailsY, scrollPosition, currentIndex);
+  //     // setCurrentPosition(currentIndex === -1 ? null : currentIndex);
+  //   };
 
-    window.addEventListener("scroll", handlePosition);
-    return () => window.removeEventListener("scroll", handlePosition);
-  }, [ref]);
+  //   window.addEventListener("scroll", handlePosition);
+  //   return () => window.removeEventListener("scroll", handlePosition);
+  // }, [ref]);
 
   const handleScroll = (workName, idx) => {
     if (currentPosition === idx) {
