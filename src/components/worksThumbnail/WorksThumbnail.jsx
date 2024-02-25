@@ -6,6 +6,7 @@ import WorksIndex from "../worksIndex/WorksIndex";
 export default function WorksThumbnail() {
   //scrollRef에 각 썸네일의 ref를 배열로 담아 WorksIndex에 props로 전달. WorksIndex에는 foward필요.
   const scrollRef = useRef([]);
+
   return (
     <div className={styles.container}>
       <WorksIndex ref={scrollRef} />
