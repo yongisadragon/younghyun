@@ -14,7 +14,7 @@ const WorksIndex = (props, ref) => {
       const thumbnailsY = ref.current.map((thumb) => thumb.offsetTop);
       //현재 스크롤위치의 idx계산
       const currentIndex = thumbnailsY.findIndex((el) => el > scrollPosition);
-      console.log(scrollPosition);
+      // console.log(scrollPosition);
 
       // 현재 스크롤이 바닥에 도달했는지 여부 확인
       const isAtBottom =
