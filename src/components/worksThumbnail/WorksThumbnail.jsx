@@ -7,10 +7,10 @@ import { useInView } from "react-intersection-observer";
 export default function WorksThumbnail() {
   //scrollRef에 각 썸네일의 ref를 배열로 담아 WorksIndex에 props로 전달. WorksIndex에는 foward필요.
   // const [isVisible, setIsVisible] = useState();
-  const { ref: rret, inView: isVisible } = useInView();
+  const { ref: rref, inView } = useInView();
   const scrollRef = useRef([]);
-  const rref = useRef();
-  console.log(scrollRef);
+  // const rref = useRef();
+  console.log(inView);
 
   // useEffect(() => {
   //   const observer = new IntersectionObserver((entries) => {
@@ -24,7 +24,7 @@ export default function WorksThumbnail() {
   return (
     <div className={styles.container}>
       <WorksIndex ref={scrollRef} />
-      <div ref={rref}>{isVisible ? "special" : "no"}</div>
+      <div ref={rref}>{inView ? "special" : "no"}</div>
 
       {worksData.map((work, i) => (
         //{}안에는 js문법만, ${} 안에는 전부 문자열화됨. 즉 `styles.${work.layout}` 과 같이 쓰면 work.layout 자체가 js문법이므로 ${} 안에는 못들어옴. 그래서 대활호 접근으로 바꿔야 인식됨.
@@ -39,6 +39,7 @@ export default function WorksThumbnail() {
             <p>{work.name}</p>
             <p>{work.year}</p>
             <p>{work.materials}</p>
+            test
           </div>
         </div>
       ))}
